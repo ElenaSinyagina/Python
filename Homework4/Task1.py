@@ -5,4 +5,10 @@
 from cmath import pi
 
 a = int(input('Введите количество знаков после запятой для числа π: '))
-n = print(round(pi, a))
+num_pi = 0
+i=1
+if i < 1000:
+    num_pi = num_pi + 4/i - 4/(i+2)
+    i = i + 2
+
+print(round(num_pi, a))
