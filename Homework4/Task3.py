@@ -1,12 +1,13 @@
 # Задайте последовательность чисел. Напишите программу, которая 
 # выведет список неповторяющихся элементов исходной последовательности.
 
-list = [1, 2, 1, 3, 2, 4, 5]
-rep_list = []
+lst = [1, 2, 1, 3, 2, 4, 5]
+rep_lst = []
 result = []
-for i in range (1,len (list)):
-    if list.count(i)>1:
-        rep_list.append(i)
+for i in range (1,len (lst)):
+    if lst.count(i)>1:
+        rep_lst.append(i)
 
-result = set(list) - set(rep_list)
-print(result)
+result = set(lst) - set(rep_lst)
+print(lst)
+print(list(result))
