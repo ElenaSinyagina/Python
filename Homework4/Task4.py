@@ -6,7 +6,9 @@
 
 from random import randint
 
-
+k = int(input('Введите степень k > 0: '))
+if k <= 0:
+    print("Вы ввели значение k меньше или равное 1")
 def func(k):
     data = open("file.txt", "a")
     a=int(0)
@@ -27,8 +29,6 @@ def func(k):
         data.write ('=0')
         data.write('\n')        
     data.close()
-
-k = int(input('Введите степень k: '))
 
 func(k)
 
