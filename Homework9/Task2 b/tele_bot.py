@@ -7,7 +7,7 @@ from bot_commands import help_command
 from bot_commands import write_command
 from bot_commands import delete_command
 
-app = ApplicationBuilder().token('5532942382:AAEL5zlGSnyedtodvml-nVlNUw05QxTnC2k').build()
+app = ApplicationBuilder().token('Token').build()
 
 app.add_handler(CommandHandler("hi", hi_command))
 app.add_handler(CommandHandler("search", search_command))
