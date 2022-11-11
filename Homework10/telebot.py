@@ -2,7 +2,7 @@ import telebot
 
 from random import randint
 
-bot = telebot.TeleBot('5532942382:AAEL5zlGSnyedtodvml-nVlNUw05QxTnC2k', parse_mode = None)
+bot = telebot.TeleBot(token, parse_mode = None)
 
 game_move = False
 candies = 2021
